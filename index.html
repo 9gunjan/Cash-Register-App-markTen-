@@ -1,54 +1,58 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-
-<head>
-  <meta charset="utf-8">
-  <title>cash-register-app</title>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cash Register Manager</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
-</head>
+  </head>
+  <body>
+      <div class="container-fluid">
+    
+        <h1 class="heading">Cash Register Manager</h1>
+        <p class="description">
+          Enter the bill amount and cash given by the customer and know minimum
+          number of notes to return.
+        </p>
+        <label class="input-label" for="bill-amount">Bill Amount:</label><br>
+        <input class="input" id="bill-amount" type="text" /><br>
+        
+        <label class="input-label" for="cash-given">Cash Given:</label><br>
+        <input class="input" id="cash-given" type="text" /><br>
+        <button id="check-button" class="btn btn-dark">Check</button><br>
+        <p id="error-message"></p>
 
-<body>
-  <div class="container">
-    <h1 class="heading">CASH REGISTER APP</h1>
-    <p class="description">Enter the bill amount and cash given by the customer and know minimum no. of notes to return</p>
 
-    <label for="bill-amount">Bill Amount</label>
-    <input type="text" id="bill-amount">
-
-    <label for="cash-given">Cash Given</label>
-    <input type="text" id="cash-given">
-
-    <button id="check-button">CHECK</button>
-    <p class="error-msg"></p>
-
-    <table class="change-table" border="2px">
-      <caption>Return change</caption>
-      <tr>
-        <th>No. of Notes</th>
-        <td class="no-of-notes"></td>
-        <td class="no-of-notes"></td>
-        <td class="no-of-notes"></td>
-        <td class="no-of-notes"></td>
-        <td class="no-of-notes"></td>
-        <td class="no-of-notes"></td>
-        <td class="no-of-notes"></td>
-      </tr>
-      <tr>
-        <th>Notes</th>
-        <td>2000</td>
-        <td>500</td>
-        <td>100</td>
-        <td>20</td>
-        <td>10</td>
-        <td>5</td>
-        <td>1</td>
-      </tr>
-    </table>
-
-  </div>
-
-  <script src="index.js"></script>
-
-</body>
-
+        <table class="change-table"  border="2px" >
+          <caption>
+            Return Change
+          </caption>
+          <tr>
+            <th>No of Notes</th>
+            <td class="no-of-notes"></td>
+            <td class="no-of-notes"></td>
+            <td class="no-of-notes"></td>
+            <td class="no-of-notes"></td>
+            <td class="no-of-notes"></td>
+            <td class="no-of-notes"></td>
+            <td class="no-of-notes"></td>
+          </tr>
+          <tr>
+            <th>Note</th>
+            <td>2000</td>
+            <td>500</td>
+            <td>100</td>
+            <td>20</td>
+            <td>10</td>
+            <td>5</td>
+            <td>1</td>
+          </tr>
+        </table>
+     
+</div>
+    
+    <script src="script.js" type="text/javascript"></script>
+  </body>
 </html>
