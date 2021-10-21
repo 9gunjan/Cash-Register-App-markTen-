@@ -1,26 +1,41 @@
 
 body{
-  background-color: #D4ECDD;
+    background-color: #D4ECDD;
+    margin-left: 25%;
 
 }
 
 .heading{
-  font-family: Montserrat-Black;
-}
-.container-fluid{
-  display:flex;
-  flex-direction: column;
-  width:50vw;
-  margin-top: 2em;
-  text-align: center;
+    font-family: Montserrat-Black;
+    font-weight: bolder;
+    
+  }
+  .container-fluid{
+    display:flex;
+    flex-direction: column;
+    width:50vw;
+    margin-top: 2em;
+    text-align: center;
+    
   
+  }
+  #check-button{
+      margin-top: 0.5em;
 
-}
-#check-button{
-    margin-top: 0.5em;
+  }
+  label{
+      font-size: larger;
+      margin-bottom: 0em;
+  }
+  .btn{
+      font-weight: bolder;
+      font-size: larger;
+      width: 200px;
+     margin-left: 37%;
 
-}
-label{
-    font-size: larger;
-    margin-bottom: 0em;
-}
+
+  }
+  .input{
+     width: 200px;
+     margin-left: 37%;
+  }
